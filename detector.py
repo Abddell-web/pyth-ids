@@ -6,7 +6,6 @@ import time
 
 
 def remove_old(entries, now, window):
-    """Keep only entries (time, ...) that are inside the time window."""
     return [e for e in entries if now - e[0] <= window]
 
 
